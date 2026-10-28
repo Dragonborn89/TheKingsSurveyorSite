@@ -165,6 +165,20 @@ section { padding: 3rem 0; }
 }
 .feature .text p:last-child { margin-bottom: 0; }
 
+/* Looping clips (index_v2): poster shows until the clip is scrolled into view */
+.loop { margin: 0; }
+.loop video {
+  display: block;
+  width: 100%; height: auto;
+  background: #000;
+  border: 1px solid #23272c;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+.made .loop { margin: 0 auto 1.75rem; }
+.weather { border-top: 1px solid #17191c; text-align: center; }
+.weather .caption { color: var(--parchment-dim); margin: -0.25em 0 1.25em; }
+.hero video.hero-art { object-position: center 45%; }
+
 /* Gallery */
 .gallery {
   display: grid;

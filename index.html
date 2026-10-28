@@ -68,10 +68,9 @@
 <body>
 
 <header class="hero">
-  <picture class="hero-art">
-    <source media="(max-width: 960px)" srcset="assets/hero_960x310.jpg">
-    <img src="assets/hero_1920x620.jpg" alt="The gate of Vesterra at night, torches burning on either side" width="1920" height="620" fetchpriority="high">
-  </picture>
+  <video class="hero-art" data-loop autoplay muted loop playsinline preload="auto" poster="assets/poster_hero_gate.jpg" aria-label="The gate of Vesterra catching fire">
+    <source src="assets/clips/hero_gate.mp4" type="video/mp4">
+  </video>
   <div class="hero-inner">
     <img class="logo" src="assets/logo_640w.png" srcset="assets/logo_640w.png 640w, assets/logo_1280w.png 1280w" sizes="(max-width: 700px) 80vw, 560px" alt="The King's Surveyor" width="640" height="480">
     <h1 class="visually-hidden">The King's Surveyor</h1>
@@ -100,7 +99,11 @@
     <p>Sebastian is the King's Surveyor. Not a soldier, not a mage, just a careful man with a torch and a good eye, who has never once failed to come back from the unknown. He does the work because he is good at it, because it keeps his family fed, and because he does not stop.</p>
     <p>The Aurelith crown sends him south to chart Vesterra, an ancient valley at the edge of the realm. Something very old reaches out of the darkness, corrupting the surveyor's path, and he wakes beyond the edge of every map he has ever drawn. Whatever it is, it does not want him to get home. He must return home.</p>
   </div>
-  <img src="assets/shot_01_glade_overlook.jpg" alt="Looking out over a sunlit glade from a high overlook" width="1280" height="720" loading="lazy">
+  <figure class="loop">
+    <video data-loop muted loop playsinline preload="none" poster="assets/poster_far_avenue.jpg" width="1280" height="720" aria-label="Walking the avenue of tall trees toward a distant tower">
+      <source src="assets/clips/far_avenue.mp4" type="video/mp4">
+    </video>
+  </figure>
 </section>
 
 <section class="feature flip">
@@ -108,7 +111,11 @@
     <h2>A Land That Remembers</h2>
     <p>Vesterra has been empty for a very long time. Whatever happened here left ruins in the mountains, halls no one has walked in centuries, and dead that still remember what they were. Sebastian carries a sword, though fighting is done out of necessity not enjoyment.</p>
   </div>
-  <img src="assets/shot_08_skeleton_fire.jpg" alt="A skeleton warrior lit by firelight in a ruined hall" width="1280" height="720" loading="lazy">
+  <figure class="loop">
+    <video data-loop muted loop playsinline preload="none" poster="assets/poster_land_king.jpg" width="1280" height="720" aria-label="A crowned skeleton king rises, then skeletons gather at a fire">
+      <source src="assets/clips/land_king.mp4" type="video/mp4">
+    </video>
+  </figure>
 </section>
 
 <section class="feature">
@@ -116,7 +123,11 @@
     <h2>The Light</h2>
     <p>Magic here is not something you cast. It is an old, quiet relationship with the Light, the tether to the undercurrent of the world. Sebastian carries a torch. It is how he sees, and what the dark keeps its distance from, and it does not last. Out here, some things wake to light and react. Not all of them kindly.</p>
   </div>
-  <img src="assets/shot_02_torch_at_gate.jpg" alt="A torch held up before an ancient stone gate" width="1280" height="720" loading="lazy">
+  <figure class="loop">
+    <video data-loop muted loop playsinline preload="none" poster="assets/poster_light_cube.jpg" width="1280" height="720" aria-label="Torchlight in a night wood, a glowing cube waking, a lantern at dusk">
+      <source src="assets/clips/light_cube.mp4" type="video/mp4">
+    </video>
+  </figure>
 </section>
 
 <section class="feature flip">
@@ -124,20 +135,39 @@
     <h2>Chart Your Way Home</h2>
     <p>There is no experience bar and no skill tree. Sebastian gets better the way a surveyor does: by looking. Climb, leap and slide across a land that was never meant to be crossed. Knock on old stone and find the passages behind it. Study what you find in a field journal drawn in his own hand, and watch the map fill in beneath your boots.</p>
   </div>
-  <img src="assets/shot_04_survey_map.jpg" alt="The surveyor's hand-drawn map filling in" width="1280" height="720" loading="lazy">
+  <figure class="loop">
+    <video data-loop muted loop playsinline preload="none" poster="assets/poster_chart_map.jpg" width="1280" height="720" aria-label="An overlook of the valley, then the hand-drawn survey map filling in">
+      <source src="assets/clips/chart_map.mp4" type="video/mp4">
+    </video>
+  </figure>
+</section>
+
+<section class="weather">
+  <h2>Weather</h2>
+  <p class="caption">The same avenue in sun, rain and snow.</p>
+  <figure class="loop">
+    <video data-loop muted loop playsinline preload="none" poster="assets/poster_weather.jpg" width="1440" height="810" aria-label="The avenue of trees in clear weather, then rain, then snow">
+      <source src="assets/clips/weather_cycle.mp4" type="video/mp4">
+    </video>
+  </figure>
 </section>
 
 <section class="gallery" aria-label="Screenshots">
-  <img src="assets/shot_03_tower_avenue.jpg" alt="An avenue of tall trees leading toward a distant tower" width="1280" height="720" loading="lazy">
-  <img src="assets/shot_05_cherry_hall.jpg" alt="A hall under blossoming cherry trees" width="1280" height="720" loading="lazy">
-  <img src="assets/shot_07_the_falls.jpg" alt="A waterfall seen from the valley floor" width="1280" height="720" loading="lazy">
-  <img src="assets/shot_06_the_trench.jpg" alt="A narrow trench cut through stone" width="1280" height="720" loading="lazy">
-  <img src="assets/shot_09_goblin_warren.jpg" alt="A goblin warren lit by torchlight" width="1280" height="720" loading="lazy">
-  <img src="assets/shot_10_journal_pack_page.jpg" alt="A page of the surveyor's field journal" width="1280" height="720" loading="lazy">
+  <img src="assets/gal_climb.jpg" alt="Climbing a stone wall above a blossoming tree, sunlight falling through" width="1280" height="720" loading="lazy">
+  <img src="assets/gal_staff.jpg" alt="The surveyor's staff unfolding before a distant tower" width="1280" height="720" loading="lazy">
+  <img src="assets/gal_journal.jpg" alt="A page of the field journal describing a found relic" width="1280" height="720" loading="lazy">
+  <img src="assets/gal_lantern.jpg" alt="Sword and lantern raised at dusk" width="1280" height="720" loading="lazy">
+  <img src="assets/gal_crystals.jpg" alt="Sword drawn among glowing crystals in a dark trench" width="1280" height="720" loading="lazy">
+  <img src="assets/gal_snowfield.jpg" alt="A bright field beneath a frozen falls, sword drawn, figures in the distance" width="1280" height="720" loading="lazy">
 </section>
 
 <section class="made">
   <h2>Made By Hand</h2>
+  <figure class="loop">
+    <video data-loop muted loop playsinline preload="none" poster="assets/poster_made_wipe.jpg" width="1280" height="720" aria-label="A wipe between the raw render and the CRT simulation">
+      <source src="assets/clips/made_wipe.mp4" type="video/mp4">
+    </video>
+  </figure>
   <p>Built in an engine written from scratch for this game, with a CRT display simulation at its heart. An homage to the games that first made a dungeon feel like a place you were really standing in.</p>
   <p>Analog Dream Dev is Alex Rybak, a solo developer in the United States. Work on the engine and the game began on 31 October 2025, after playing retro games on a CRT and wanting to bring back the feeling those games gave him as a kid. Both the engine, <a href="https://retrogameengine.com/">Retro Game Engine</a>, and The King's Surveyor are written by hand.</p>
   <p class="cta">
@@ -168,6 +198,26 @@
   <p>&copy; 2026 Analog Dream Dev LLC.</p>
   <p class="small">Title font: Mountain King by Michael W. Moss, CC BY 4.0.</p>
 </footer>
+
+<script>
+(function () {
+  var vids = document.querySelectorAll('video[data-loop]');
+  if (!vids.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) {
+    vids.forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
+    return;
+  }
+  function play(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+  if (!('IntersectionObserver' in window)) { vids.forEach(play); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { play(e.target); } else { e.target.pause(); }
+    });
+  }, { threshold: 0.3 });
+  vids.forEach(function (v) { io.observe(v); });
+})();
+</script>
 
 </body>
 </html>
